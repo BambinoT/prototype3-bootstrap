@@ -1,0 +1,180 @@
+@media screen and (max-width: 576px) {
+
+  .navbar{
+    padding: 19px 3%;
+  }
+
+                  /* portfolio */
+
+    /* Place the timelime to the left */
+    .main-timeline::after {
+      left: 31px;
+    }
+
+    .card a .card-img-top{
+      display:block;
+      height: 263px;
+      width: 100%;
+    }
+    .card a:hover::after {
+      content:'';
+      position:absolute;
+      left:0; 
+      top:0;
+      height: 263px;
+      width: 100%;
+      display: block;
+      background-color: rgba(255, 166, 0, 0.879);
+      transition: 1s;
+    }
+  
+    /* Full-width containers */
+    .timeline {
+      width: 100%;
+      padding-left: 60px;
+      padding-right: 0px;
+    }
+
+    .left {
+      left: 0%;
+      text-align: left;
+    }
+  
+    /* faire en sorte que tous les containers de classe right se comportent comme se de gauche */
+    .right {
+      left: 0%;
+    }
+
+    .timeline:nth-child(1)::after{
+      background-image: url(../img-pro3/about1.jpg);
+      left: -1%;
+      width: 70px;
+      height: 70px;
+  }
+  .timeline:nth-child(2)::after{
+      background-image: url(../img-pro3/about2.jpg);
+      left: -1%;
+      width: 70px;
+      height: 70px;
+  }
+  .timeline:nth-child(3)::after{
+      background-image: url(../img-pro3/about3.jpg);
+      left: -1%;
+      width: 70px;
+      height: 70px;
+  }
+  .timeline:nth-child(4)::after{
+      background-image: url(../img-pro3/about4.jpg);
+      left: -1%;
+      width: 70px;
+      height: 70px;
+  }
+  .timeline-image{
+    position: relative;
+    background-color: orange;
+    color: white;
+    top: 15px;
+    left: -1%;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+  }
+  .timeline-image h4{
+    padding-top: 2px;
+    font-size: 11px;
+  }
+
+  /* company */
+  .company{
+    text-align: center;
+  }
+  .company img{
+    width: 100px;
+    height: 50px;
+  }
+
+  /* footer */
+  footer .footer{
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+  }
+  footer .footer .milieu{
+    margin: 17px;
+  }
+
+}
+
+
+@media screen and (min-width:576px) and (max-width: 768px) {
+
+  .card a .card-img-top{
+    display:block;
+    height: 161px;
+    width: 100%;
+  }
+  .card a:hover::after {
+    content:'';
+    position:absolute;
+    left:0; 
+    top:0;
+    height: 161px;
+    width: 100%;
+    display: block;
+    background-color: rgba(255, 166, 0, 0.879);
+    transition: 1s;
+  }
+
+    .timeline {
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 45%;
+      }
+
+      .left {
+        left: -4%;
+        text-align: right;
+      }
+
+      .timeline:nth-child(1)::after{
+        background-image: url(../img-pro3/about1.jpg);
+        left: 105%;
+        width: 100px;
+        height: 100px;
+    }
+
+    .timeline:nth-child(2)::after{
+        background-image: url(../img-pro3/about2.jpg);
+        left: -30%;
+        width: 100px;
+        height: 100px;
+    }
+
+    .timeline:nth-child(3)::after{
+        background-image: url(../img-pro3/about3.jpg);
+        left: 105%;
+        width: 100px;
+        height: 100px;
+    }
+    .timeline:nth-child(4)::after{
+        background-image: url(../img-pro3/about4.jpg);
+        left: -30%;
+        width: 100px;
+        height: 100px;
+    }
+    .timeline-image{
+      position: relative;
+      background-color: orange;
+      color: white;
+      top: 15px;
+      left: 43%;
+      width: 100px;
+      height: 100px;
+      z-index: 1;
+    }
+    .timeline-image h4{
+      padding-top: 2px;
+      font-size: 11px;
+    }
+ 
+}
